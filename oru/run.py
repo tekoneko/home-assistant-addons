@@ -268,30 +268,17 @@ meter = Meter(
     mfa_secret=os.getenv("MFA_SECRET"),
     account_uuid=os.getenv("ACCOUNT_UUID"),
     meter_number=os.getenv("METER_NUMBER"),
+    account_number=os.getenv("ACCOUNT_NUMBER"),
     site=os.getenv("SITE"),
     browser_path="/usr/bin/chromium-browser"
     # browser_path="/usr/bin/google-chrome-stable"
 )
-
-# make sure to comment below out before pushing
-
-
-# import test
-# meter = Meter(
-#     email=test.email,
-#     password=test.password,
-#     mfa_type=test.mfa_type,
-#     mfa_secret=test.mfa_secret,
-#     account_uuid=test.account_uuid,
-#     meter_number=test.meter_number
-# )
-
-
+# meter._LOGGER.setLevel(logging.DEBUG)
 
 print(f"Calling meter.last_read()..")
 startTime, endTime, value, uom = asyncio.get_event_loop().run_until_complete(meter.last_read())
-
-message = {'startTime': startTime, 'endTime': endTime, 'value': value, 'uom': uom}
+asOf = datetime.now().isoformat()
+message = {'startTime': startTime, 'endTime': endTime, 'value': value, 'uom': uom, 'asOf': asOf}
 
 print(f"message: {message}")
 

@@ -13,26 +13,24 @@ In the Home Assistant add-on store, a possibility to add a repository is provide
 Use the following URL to add this repository:
 
 ```txt
-https://github.com/tmb5cg/home-assistant-addons
+https://github.com/tekoneko/home-assistant-addons
 ```
 
 ## Add-ons provided by this repository
 
 ### [ConEd Energy Usage Logger][addon-oru]
+
 Retrieving the last meter read from ConEdison and publishes data via MQTT
-### [Monkeypox Vaccine Appointment Availability Dectector][addon-monkeypox]
-Scrapes NY state vaccine portal for Monkeypox vaccine availability
 
 ## Releases
 
 Releases are based on [Semantic Versioning][semver], and use the format
-of ``MAJOR.MINOR.PATCH``. In a nutshell, the version will be incremented
+of `MAJOR.MINOR.PATCH`. In a nutshell, the version will be incremented
 based on the following:
 
-- ``MAJOR``: Incompatible or major changes.
-- ``MINOR``: Backwards-compatible new features and enhancements.
-- ``PATCH``: Backwards-compatible bugfixes and package updates.
-
+- `MAJOR`: Incompatible or major changes.
+- `MINOR`: Backwards-compatible new features and enhancements.
+- `PATCH`: Backwards-compatible bugfixes and package updates.
 
 ## License
 
@@ -58,6 +56,4 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-
-[addon-oru]: https://github.com/tmb5cg/home-assistant-addons/tree/main/oru
-[addon-monkeypox]: https://github.com/tmb5cg/home-assistant-addons/tree/master/monkeypox
+[addon-oru]: https://github.com/tekoneko/home-assistant-addons/tree/main/oru

@@ -128,9 +128,5 @@ dmypy.json
 # Pyre type checker
 .pyre/
 .DS_Store
-oru/test.py
-**test.py
-monkeypox/test.py
-monkeypox/test.py
-monkeypox/gui.py
-monkeypox/instabot.py
+#oru/test.py
+#**test.py
